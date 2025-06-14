@@ -531,9 +531,9 @@ Cauze probabile: Testele nu verifică output-ul efectiv la consolă pe care `Con
 
 #### E.2. Branch Coverage - fiecare ramura de executie a fost parcursa de cel putin un test
 
-![Screenshot 2025-06-14 174047.png](..%2F..%2FOneDrive%2FPictures%2FScreenshots%2FScreenshot%202025-06-14%20174047.png)
+![Screenshot 2025-06-14 174047.png](images%2FScreenshot%202025-06-14%20174047.png)
 
-![Screenshot 2025-06-14 174124.png](..%2F..%2FOneDrive%2FPictures%2FScreenshots%2FScreenshot%202025-06-14%20174124.png)
+![Screenshot 2025-06-14 174124.png](images%2FScreenshot%202025-06-14%20174124.png)
 
 #### E.3. Condition Coverage - fiecare conditie compusa trebuie sa aiba teste care sa acopere fiecare posibilitate
 

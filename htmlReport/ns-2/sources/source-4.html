@@ -1,0 +1,167 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Pacient</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.proiect.MyApp.Model</a>
+</div>
+
+<h1>Coverage Summary for Class: Pacient (com.proiect.MyApp.Model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Pacient</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (9/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.proiect.MyApp.Model;
+&nbsp;
+&nbsp;public class Pacient {
+&nbsp;    private String nume;
+&nbsp;    private String prenume;
+&nbsp;    private String cnp;
+&nbsp;    private String istoricMedical;
+&nbsp;
+<b class="fc">&nbsp;    public Pacient() {</b>
+<b class="fc">&nbsp;        this.nume = &quot;&quot;;</b>
+<b class="fc">&nbsp;        this.prenume = &quot;&quot;;</b>
+<b class="fc">&nbsp;        this.cnp = &quot;&quot;;</b>
+<b class="fc">&nbsp;        this.istoricMedical = &quot;&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Getteri ?i setteri
+&nbsp;    public String getNume() {
+<b class="fc">&nbsp;        return nume;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setNume(String nume) {
+<b class="fc">&nbsp;        this.nume = nume;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getPrenume() {
+<b class="fc">&nbsp;        return prenume;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setPrenume(String prenume) {
+<b class="fc">&nbsp;        this.prenume = prenume;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getCnp() {
+<b class="fc">&nbsp;        return cnp;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setCnp(String cnp) {
+<b class="fc">&nbsp;        if (cnp == null || cnp.length() != 13) {</b>
+<b class="fc">&nbsp;            throw new IllegalArgumentException(&quot;CNP-ul trebuie s? aib? exact 13 caractere!&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        this.cnp = cnp;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getIstoricMedical() {
+<b class="fc">&nbsp;        return istoricMedical;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setIstoricMedical(String istoricMedical) {
+<b class="fc">&nbsp;        this.istoricMedical = istoricMedical;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-06-14 13:31</div>
+</div>
+</body>
+</html>

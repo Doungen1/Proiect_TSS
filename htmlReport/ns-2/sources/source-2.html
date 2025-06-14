@@ -1,0 +1,224 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ConsoleUI</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.proiect.MyApp.Model</a>
+</div>
+
+<h1>Coverage Summary for Class: ConsoleUI (com.proiect.MyApp.Model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ConsoleUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    57.1%
+  </span>
+  <span class="absValue">
+    (4/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    37.5%
+  </span>
+  <span class="absValue">
+    (3/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    53.2%
+  </span>
+  <span class="absValue">
+    (33/62)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.proiect.MyApp.Model;
+&nbsp;
+&nbsp;import java.util.Scanner;
+&nbsp;
+&nbsp;public class ConsoleUI {
+&nbsp;    private final com.proiect.MyApp.Model.CabinetMedical cabinetMedicalService;
+&nbsp;    private final Scanner scanner;
+&nbsp;
+<b class="fc">&nbsp;    public ConsoleUI(com.proiect.MyApp.Model.CabinetMedical cabinetMedicalService) {</b>
+<b class="fc">&nbsp;        this.cabinetMedicalService = cabinetMedicalService;</b>
+<b class="fc">&nbsp;        this.scanner = new Scanner(System.in);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void start() {
+<b class="fc">&nbsp;        boolean quit = false;</b>
+<b class="fc">&nbsp;        while (!quit) {</b>
+&nbsp;            // print the menu
+<b class="fc">&nbsp;            System.out.println(&quot;\nMeniu Principal:&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;1. Adaug? medic&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;2. Adaug? pacient&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;3. Creeaz? o programare&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;4. Anuleaz? o programare&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;5. Emite o re?et?&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;0. Ie?ire&quot;);</b>
+<b class="fc">&nbsp;            System.out.print(&quot;Alege o op?iune: &quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;            String line = scanner.nextLine();</b>
+&nbsp;            int option;
+&nbsp;            try {
+<b class="fc">&nbsp;                option = Integer.parseInt(line);</b>
+<b class="nc">&nbsp;            } catch (NumberFormatException e) {</b>
+<b class="nc">&nbsp;                System.out.println(&quot;Op?iune invalid?.&quot;);</b>
+&nbsp;                continue;      // back to printing the menu
+&nbsp;            }
+&nbsp;
+&nbsp;            try {
+<b class="pc">&nbsp;                switch (option) {</b>
+<b class="nc">&nbsp;                    case 1:  adaugaMedic();        break;</b>
+<b class="nc">&nbsp;                    case 2:  adaugaPacient();      break;</b>
+<b class="nc">&nbsp;                    case 3:  adaugaProgramare();   break;</b>
+<b class="nc">&nbsp;                    case 4:  anuleazaProgramare(); break;</b>
+<b class="nc">&nbsp;                    case 5:  emiteReteta();        break;</b>
+<b class="fc">&nbsp;                    case 0:  quit = true;          break;</b>
+<b class="nc">&nbsp;                    default: System.out.println(&quot;Op?iune invalid?.&quot;);</b>
+&nbsp;                }
+<b class="nc">&nbsp;            } catch (Exception e) {</b>
+<b class="nc">&nbsp;                System.out.println(&quot;Eroare: &quot; + e.getMessage());</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    void adaugaMedic() throws Exception {
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i numele medicului:&quot;);</b>
+<b class="fc">&nbsp;        String nume = scanner.nextLine();</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i prenumele medicului:&quot;);</b>
+<b class="fc">&nbsp;        String prenume = scanner.nextLine();</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i specializarea medicului:&quot;);</b>
+<b class="fc">&nbsp;        String specializare = scanner.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;        cabinetMedicalService.adaugaMedic(nume, prenume, specializare);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    void adaugaPacient() throws Exception {
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i numele pacientului:&quot;);</b>
+<b class="fc">&nbsp;        String nume = scanner.nextLine();</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i prenumele pacientului:&quot;);</b>
+<b class="fc">&nbsp;        String prenume = scanner.nextLine();</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i CNP-ul pacientului:&quot;);</b>
+<b class="fc">&nbsp;        String cnp = scanner.nextLine();</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Introduce?i istoricul medical al pacientului (dac? este disponibil):&quot;);</b>
+<b class="fc">&nbsp;        String istoricMedical = scanner.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;        cabinetMedicalService.adaugaPacient(nume, prenume, cnp, istoricMedical);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private void adaugaProgramare() throws Exception {
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i numele pacientului pentru programare:&quot;);</b>
+<b class="nc">&nbsp;        String numePacient = scanner.nextLine();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i numele medicului pentru programare:&quot;);</b>
+<b class="nc">&nbsp;        String numeMedic = scanner.nextLine();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i data ?i ora program?rii (yyyy-MM-ddTHH:mm):&quot;);</b>
+<b class="nc">&nbsp;        String dataOraString = scanner.nextLine();</b>
+&nbsp;
+<b class="nc">&nbsp;        cabinetMedicalService.adaugaProgramare(numePacient, numeMedic, dataOraString);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private void anuleazaProgramare() throws Exception {
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i ID-ul program?rii pentru anulare:&quot;);</b>
+<b class="nc">&nbsp;        String programareId = scanner.nextLine();</b>
+&nbsp;
+<b class="nc">&nbsp;        cabinetMedicalService.anuleazaProgramare(programareId);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private void emiteReteta() throws Exception {
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i ID-ul pacientului pentru care se emite re?eta:&quot;);</b>
+<b class="nc">&nbsp;        String pacientId = scanner.nextLine();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i ID-ul medicului care emite re?eta:&quot;);</b>
+<b class="nc">&nbsp;        String medicId = scanner.nextLine();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i diagnosticul:&quot;);</b>
+<b class="nc">&nbsp;        String diagnostic = scanner.nextLine();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;Introduce?i tratamentul:&quot;);</b>
+<b class="nc">&nbsp;        String tratament = scanner.nextLine();</b>
+&nbsp;
+<b class="nc">&nbsp;        cabinetMedicalService.emiteReteta(pacientId, medicId, diagnostic, tratament);</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-06-14 13:31</div>
+</div>
+</body>
+</html>

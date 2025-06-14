@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > CabinetMedical</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.proiect.MyApp.Model</a>
+</div>
+
+<h1>Coverage Summary for Class: CabinetMedical (com.proiect.MyApp.Model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CabinetMedical</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88.2%
+  </span>
+  <span class="absValue">
+    (15/17)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.proiect.MyApp.Model;
+&nbsp;
+&nbsp;import com.proiect.MyApp.Service.*;
+&nbsp;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.Comparator;
+&nbsp;import java.util.List;
+&nbsp;import java.util.TreeSet;
+&nbsp;
+&nbsp;public class CabinetMedical extends CabinetMedicalService {
+&nbsp;    private static MedicService medicService;
+&nbsp;    private static PacientService pacientService;
+&nbsp;    private static ProgramService programService;
+&nbsp;    private static RetetaService retetaService;
+&nbsp;
+&nbsp;    static {
+&nbsp;        try {
+<b class="fc">&nbsp;            medicService   = new MedicService();</b>
+<b class="fc">&nbsp;            pacientService = new PacientService();</b>
+<b class="fc">&nbsp;            programService = new ProgramService();</b>
+<b class="fc">&nbsp;            retetaService  = new RetetaService();</b>
+<b class="nc">&nbsp;        } catch (Exception e) {</b>
+<b class="nc">&nbsp;            throw new RuntimeException(&quot;Nu am putut ini?ializa serviciile&quot;, e);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    private final List&lt;Medic&gt; medici = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;    private final TreeSet&lt;Programare&gt; programari = new TreeSet&lt;&gt;(Comparator.comparing(Programare::getDataOra));</b>
+&nbsp;
+&nbsp;
+&nbsp;    public CabinetMedical() {
+<b class="fc">&nbsp;        super(medicService, pacientService, programService, retetaService);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void adaugaMedic(Medic medic) {
+<b class="fc">&nbsp;        medici.add(medic);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void adaugaProgramare(Programare programare) {
+<b class="fc">&nbsp;        programari.add(programare);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void anuleazaProgramare(Programare programare) {
+<b class="fc">&nbsp;        programari.remove(programare);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;Programare&gt; getProgramari() {
+<b class="fc">&nbsp;        return new ArrayList&lt;&gt;(programari);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public Medic cautaMedic(String nume) {
+<b class="fc">&nbsp;        return medici.stream()</b>
+<b class="fc">&nbsp;                .filter(m -&gt; m.getNume().equalsIgnoreCase(nume))</b>
+<b class="fc">&nbsp;                .findFirst()</b>
+<b class="fc">&nbsp;                .orElse(null);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-06-14 13:31</div>
+</div>
+</body>
+</html>

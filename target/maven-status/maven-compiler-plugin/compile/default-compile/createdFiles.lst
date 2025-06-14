@@ -1,0 +1,16 @@
+com\proiect\MyApp\Service\RetetaService.class
+com\proiect\MyApp\Service\CabinetMedicalService.class
+com\proiect\MyApp\Service\ProgramService.class
+com\proiect\MyApp\Model\ConsoleUI.class
+com\proiect\MyApp\Service\MedicService.class
+com\proiect\MyApp\Model\CabinetMedical.class
+com\proiect\MyApp\Service\PacientService.class
+com\proiect\MyApp\Util\DbConfig.class
+com\proiect\MyApp\App.class
+com\proiect\MyApp\Util\MedicGeneralist.class
+com\proiect\MyApp\Model\Medic.class
+com\proiect\MyApp\Model\Programare.class
+com\proiect\MyApp\Model\Reteta.class
+com\proiect\MyApp\Model\Pacient.class
+com\proiect\MyApp\Test.class
+com\proiect\MyApp\Util\Pediatru.class

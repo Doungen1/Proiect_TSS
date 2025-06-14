@@ -1,4 +1,4 @@
-# Testare Unitară Java - 2025 
+# Testare Unitară Java - 2025
 
 **Proiect realizat de CAMCIUC Robert-Cristian**
 

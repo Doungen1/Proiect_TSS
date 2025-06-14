@@ -523,6 +523,23 @@ Line coverage 21/23 deoarece niciun test nu provoacă `Exception` în timpul exe
 Cauze probabile: Testele nu verifică output-ul efectiv la consolă pe care `ConsoleUI` îl generează (prompt-uri, mesaje). Nicio aserțiune nu le validează.
 ![img_2.png](images/img_2.png)
 
+### E. Diagrame 
+
+#### E.1. Statement Coverage - fiecare linie de cod executata de cel putin un test
+
+![Screenshot 2025-06-14 174017.png](images%2FScreenshot%202025-06-14%20174017.png)
+
+#### E.2. Branch Coverage - fiecare ramura de executie a fost parcursa de cel putin un test
+
+![Screenshot 2025-06-14 174047.png](..%2F..%2FOneDrive%2FPictures%2FScreenshots%2FScreenshot%202025-06-14%20174047.png)
+
+![Screenshot 2025-06-14 174124.png](..%2F..%2FOneDrive%2FPictures%2FScreenshots%2FScreenshot%202025-06-14%20174124.png)
+
+#### E.3. Condition Coverage - fiecare conditie compusa trebuie sa aiba teste care sa acopere fiecare posibilitate
+
+![Screenshot 2025-06-14 174310.png](images%2FScreenshot%202025-06-14%20174310.png)
+![Screenshot 2025-06-14 174319.png](images%2FScreenshot%202025-06-14%20174319.png)
+
 ---
 
 ## 8. Referințe

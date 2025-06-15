@@ -209,7 +209,7 @@ Presupune împărțirea datelor de intrare în grupuri pentru care se așteaptă
     *   **Date de intrare:** valoare CNP
     *   **Clase de echivalență:** CNP valid, CNP gol, CNP nul
     *   **Test:** `CNPgol()`
-        ![alt text](images/image.png)
+        ![img.png](img.png)!
     *   **Explicație:** se așteaptă ca sistemul să accepte un CNP gol și să îl stocheze.
 
 *   **Test 3 - `ProgramareTest.java`**
@@ -223,7 +223,7 @@ Presupune împărțirea datelor de intrare în grupuri pentru care se așteaptă
     *   **Funcționalitate testată:** starea inițială a unui obiect `Reteta` cu constructor implicit
     *   **Clasă de echivalență:** orice obiect `Reteta` nou creat în `new Reteta()`. Se așteaptă aceeași stare inițială.
     *   **Test specific:** `campuriImpliciteNull()`
-        ![alt text](images/image-2.png)
+       ![img_1.png](img_1.png)
     *   **Explicație:** testul validează că un obiect `Reteta` aparține clasei de echivalență a obiectelor cu câmpuri neinițializate sau default Java.
 
 *   **Test 5 - `CabinetMedicalTest.java`**

@@ -30,7 +30,7 @@ class CabinetMedicalTest {
 
     @Test
     void medicNuExista() {
-        assertThat(cabinet.cautaMedic("Nonexistent")).isNull();
+        assertThat(cabinet.cautaMedic("ID_INEXISTENT")).isNull();
     }
 
     //──────────────────────────────────────────────────────────
@@ -171,5 +171,4 @@ class CabinetMedicalTest {
         assertThat(cabinet.cautaMedic("Popescu")).isSameAs(m2);
         assertThat(cabinet.cautaMedic("Ionescu")).isSameAs(m1);
     }
-
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.proiect.MyApp.Model.MedicTest" time="0.174" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.proiect.MyApp.Model.MedicTest" time="0.149" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\doung\AppData\Local\Temp\surefire8940455831192100913\surefirebooter-20250614143143817_9.jar C:\Users\doung\AppData\Local\Temp\surefire8940455831192100913 2025-06-14T14-31-43_345-jvmRun1 surefire-20250614143143817_7tmp surefire_2-20250614143143817_8tmp"/>
+    <property name="sun.java.command" value="C:\Users\doung\AppData\Local\Temp\surefire15456126873945894000\surefirebooter-20250615115109868_9.jar C:\Users\doung\AppData\Local\Temp\surefire15456126873945894000 2025-06-15T11-51-09_298-jvmRun1 surefire-20250615115109868_7tmp surefire_2-20250615115109868_8tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\doung\IdeaProjects\ProiectJava\target\test-classes;C:\Users\doung\IdeaProjects\ProiectJava\target\classes;C:\Users\doung\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\doung\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\doung\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\doung\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\doung\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\doung\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\doung\.m2\repository\org\jacoco\org.jacoco.agent\0.8.8\org.jacoco.agent-0.8.8-runtime.jar;C:\Users\doung\.m2\repository\org\pitest\pitest-junit5-plugin\1.2.3\pitest-junit5-plugin-1.2.3.jar;C:\Users\doung\.m2\repository\org\postgresql\postgresql\42.7.2\postgresql-42.7.2.jar;C:\Users\doung\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\doung\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\doung\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\doung\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\doung\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\doung\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\doung\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\doung\AppData\Local\Temp\surefire8940455831192100913\surefirebooter-20250614143143817_9.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\doung\AppData\Local\Temp\surefire15456126873945894000\surefirebooter-20250615115109868_9.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
@@ -57,13 +57,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="idImplicitZero" classname="com.proiect.MyApp.Model.MedicTest" time="0.111"/>
-  <testcase name="equalsCuNull" classname="com.proiect.MyApp.Model.MedicTest" time="0.003"/>
+  <testcase name="idImplicitZero" classname="com.proiect.MyApp.Model.MedicTest" time="0.092"/>
+  <testcase name="equalsCuNull" classname="com.proiect.MyApp.Model.MedicTest" time="0.002"/>
   <testcase name="prenumeGolȘiNull" classname="com.proiect.MyApp.Model.MedicTest" time="0.004"/>
-  <testcase name="gettersSetters" classname="com.proiect.MyApp.Model.MedicTest" time="0.001"/>
-  <testcase name="numeGolȘiNull" classname="com.proiect.MyApp.Model.MedicTest" time="0.002"/>
+  <testcase name="gettersSetters" classname="com.proiect.MyApp.Model.MedicTest" time="0.002"/>
+  <testcase name="numeGolȘiNull" classname="com.proiect.MyApp.Model.MedicTest" time="0.001"/>
   <testcase name="constructorParametrizat" classname="com.proiect.MyApp.Model.MedicTest" time="0.001"/>
-  <testcase name="equalsAceeasiReferinta" classname="com.proiect.MyApp.Model.MedicTest" time="0"/>
-  <testcase name="stringConțineToateCâmpurile" classname="com.proiect.MyApp.Model.MedicTest" time="0.016"/>
+  <testcase name="equalsAceeasiReferinta" classname="com.proiect.MyApp.Model.MedicTest" time="0.001"/>
+  <testcase name="stringConțineToateCâmpurile" classname="com.proiect.MyApp.Model.MedicTest" time="0.011"/>
   <testcase name="seteazaIdValori" classname="com.proiect.MyApp.Model.MedicTest" time="0.001"/>
 </testsuite>

@@ -49,6 +49,12 @@ class MedicTest {
         assertThat(medic.getSpecializare()).isEqualTo("Pediatrie");
     }
 
+    @Test
+    void specializareValida() {
+        medic.setSpecializare("Dermatologie");
+        assertThat(medic.getSpecializare()).isEqualTo("Dermatologie");
+    }
+
     // [Circuit independent: toString()]
     @Test
     void stringConțineToateCâmpurile() {

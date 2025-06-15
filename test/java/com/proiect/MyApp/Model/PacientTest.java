@@ -78,7 +78,14 @@ class PacientTest {
         assertThat(pacient.getCnp()).isEmpty();
         assertThat(pacient.getIstoricMedical()).isEmpty();
     }
-
+    @Test
+    void equals_differentClass(){
+        assertThat(pacient.equals(new Object())).isFalse();
+    }
+    @Test
+    void equals_sameObject() {
+        assertThat(pacient.equals(pacient)).isTrue();
+    }
     // 5. Teste suplimentare pentru uciderea mutanților rămași
     
 }
